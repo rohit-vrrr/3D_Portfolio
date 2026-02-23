@@ -7,8 +7,8 @@ import {
   typescript,
   html,
   css,
+  angular,
   reactjs,
-  redux,
   tailwind,
   nodejs,
   mongodb,
@@ -76,20 +76,20 @@ const technologies = [
     icon: typescript,
   },
   {
+    name: "Node JS",
+    icon: nodejs,
+  },
+  {
+    name: "Angular",
+    icon: angular,
+  },
+  {
     name: "React JS",
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
     name: "Tailwind CSS",
     icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
   },
   {
     name: "MongoDB",
