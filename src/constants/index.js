@@ -3,25 +3,31 @@ import {
   frontend,
   backend,
   fullstack,
-  javascript,
-  typescript,
   html,
   css,
+  javascript,
+  typescript,
+  nodejs,
   angular,
   reactjs,
   tailwind,
-  nodejs,
   mongodb,
+  threejs,
   git,
   figma,
   docker,
   philips,
   techtologics,
   nec,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
+  memento,
+  stringchat,
+  anonymousio,
+  keeper,
+  newsletter,
+  blog,
+  upbeat,
+  tapztap,
+  madbird
 } from "../assets";
 
 export const navLinks = [
@@ -188,58 +194,58 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Memento",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Social media platform built with the MERN stack, enabling users to share memorable life events, manage posts, and interact through a responsive and dynamic social experience.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "nodejs",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "oauth2",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: memento,
+    source_code_link: "https://github.com/rohit-vrrr/memories-project",
   },
   {
-    name: "Job IT",
+    name: "String",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A real-time anonymous chat application allowing users to create or join chat rooms for seamless, low-latency group conversations.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "expressjs",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "socketio",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: stringchat,
+    source_code_link: "https://github.com/rohit-vrrr/Chat-App",
   },
   {
-    name: "Trip Guide",
+    name: "Anonymous.io",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "An anonymous social sharing platform inspired by Whisper, enabling users to post and explore messages securely with backend-driven content management.",
     tags: [
       {
-        name: "nextjs",
+        name: "javascript",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "ejs",
         color: "green-text-gradient",
       },
       {
@@ -247,8 +253,134 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: anonymousio,
+    source_code_link: "https://github.com/rohit-vrrr/Anonymous.io",
+  },
+  {
+    name: "Keeper",
+    description:
+      "Designed for quick note management, letting users create, organize, and store notes with smooth UI interactions and dynamic rendering.",
+    tags: [
+      {
+        name: "javascript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "html",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: keeper,
+    source_code_link: "https://github.com/rohit-vrrr/Keeper-App",
+  },
+  {
+    name: "Newsletter",
+    description:
+      "A subscription-based web application integrated with Mailchimp APIs to collect user details and sync them directly to Mailchimp audiences.",
+    tags: [
+      {
+        name: "nodejs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mailchimp",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: newsletter,
+    source_code_link: "https://github.com/rohit-vrrr/Newsletter-Web-App",
+  },
+  {
+    name: "Blog Website",
+    description:
+      "A customizable EJS-based blogging template with dynamic routing and reusable layouts, enabling quick deployment with minimal configuration.",
+    tags: [
+      {
+        name: "javascript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "ejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: blog,
+    source_code_link: "https://github.com/rohit-vrrr/Blog-Website",
+  },
+  {
+    name: "UpBeat",
+    description:
+      "Brings an interactive drum kit to the browser using JavaScript and DOM events, enabling sound playback through keyboard and click actions.",
+    tags: [
+      {
+        name: "javascript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "dom",
+        color: "green-text-gradient",
+      },
+      {
+        name: "html",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: upbeat,
+    source_code_link: "https://github.com/rohit-vrrr/Drums-UpBeat-Web-Dev",
+  },
+  {
+    name: "Tap-Z-Tap",
+    description:
+      "An endless Unity-based arcade game where players control a ball with single-tap mechanics to navigate an infinite zigzag path.",
+    tags: [
+      {
+        name: "unity",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "c#",
+        color: "green-text-gradient",
+      },
+      {
+        name: "android",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tapztap,
+    source_code_link: "https://github.com/rohit-vrrr/Tap-Z-Tap-Game",
+  },
+  {
+    name: "Mad Bird",
+    description:
+      "A Unity arcade game inspired by Flappy mechanics, featuring physics-based movement, obstacle avoidance, and real-time score tracking.",
+    tags: [
+      {
+        name: "unity",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "c#",
+        color: "green-text-gradient",
+      },
+      {
+        name: "android",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: madbird,
+    source_code_link: "https://github.com/rohit-vrrr/Mad-Bird-Game",
   },
 ];
 
