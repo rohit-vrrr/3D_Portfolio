@@ -27,10 +27,10 @@ import {
   blog,
   upbeat,
   tapztap,
-  madbird
+  madbird,
 } from "../assets";
 
-export const navLinks = [
+const navLinks = [
   {
     id: "about",
     title: "About",
@@ -45,22 +45,82 @@ export const navLinks = [
   },
 ];
 
-const services = [
+const hero = {
+  greeting: "Hi, I'm",
+  name: "Rohit",
+  line1: "I build immersive 3D experiences, user",
+  line2: "interfaces and scalable web applications",
+};
+
+const about = {
+  subText:
+    "I'm a skilled software developer with experience in TypeScript and JavaScript, " +
+    "and expertise in frameworks like Node.js, Angular, React and Three.js. " +
+    "I'm a quick learner and collaborate closely with clients to create efficient, scalable, " +
+    "and user-friendly solutions that solve real-world problems. Let's work together to bring your ideas to life!",
+  services: [
+    {
+      title: "Web Developer",
+      icon: web,
+    },
+    {
+      title: "Angular / React Developer",
+      icon: frontend,
+    },
+    {
+      title: "Node.js Backend Developer",
+      icon: backend,
+    },
+    {
+      title: "MEAN / MERN Stack Developer",
+      icon: fullstack,
+    },
+  ],
+};
+
+const experiences = [
   {
-    title: "Web Developer",
-    icon: web,
+    title: "Intern - Node.js Developer",
+    company_name: "Philips India Ltd.",
+    icon: philips,
+    iconBg: "#FFFFFF",
+    date: "Aug 2019 - July 2020",
+    points: [
+      "Developed a serverless architecture using AWS SAM to capture and analyze regulatory-compliant audit logs leveraging Amazon Kinesis, AWS Lambda, and Amazon CloudWatch.",
+      "Built secure and scalable RESTful APIs to handle high-volume data uploads to Amazon S3, ensuring data integrity, performance optimization, and fault tolerance.",
+      "Designed and implemented a simulator application to test and validate cloud-based infrastructure within a regulatory-compliant environment.",
+      "Automated infrastructure provisioning and deployment using Infrastructure as Code (IaC) practices, improving release efficiency, consistency, and compliance adherence across environments.",
+    ],
   },
   {
-    title: "Angular / React Developer",
-    icon: frontend,
+    title: "MERN Stack Developer",
+    company_name: "TechToLogics",
+    icon: techtologics,
+    iconBg: "#FFFFFF",
+    date: "Aug 2021 - Dec 2021",
+    points: [
+      "Full-Stack Developer with expertise in Node.js, React.js, Express.js, and MongoDB, building scalable web applications and RESTful APIs for authentication, user management, and data storage.",
+      "Designed and deployed applications on AWS (Route53, Amplify, Elastic Beanstalk, CodePipeline, CodeBuild, CloudFront, S3) with monitoring and log management.",
+      "Implemented secure authentication using JWT, integrated Nodemailer for email services and Twilio for SMS notifications.",
+      "Developed pre-launch and production-ready applications with responsive UI using HTML5, SCSS, and CSS3, ensuring secure signup and manual verification workflows.",
+    ],
   },
   {
-    title: "Node.js Backend Developer",
-    icon: backend,
-  },
-  {
-    title: "MEAN / MERN Stack Developer",
-    icon: fullstack,
+    title: "Software Engineer",
+    company_name: "NEC Software Solutions",
+    icon: nec,
+    iconBg: "#FFFFFF",
+    date: "Dec 2021 - Present",
+    points: [
+      "Engineered device onboarding and configuration workflows using the OS2IOT framework, enabling seamless remote lifecycle management for MQTT and LoRaWAN sensors.",
+      'Developed the "Context Broker Toolkit" using Angular & Node.js to monitor real-time sensor data streams and integrated IoT platforms using FIWARE for enhanced data visualization.',
+      "Contributed to the Open-Source community via OS2IoT and QuantumLeap, improving time-series database functionalities.",
+      "Designed comprehensive UI/UX frameworks in Figma to streamline the user interface for monitoring dashboards.",
+      "Architected a supplier hierarchy system to ensure EU regulation compliance and prevent social dumping, supporting UN Sustainable Development Goals.",
+      "Developed core, reusable UI components using Angular 16, TypeScript, and Storybook, ensuring design consistency across the platform.",
+      "Optimized data retrieval by implementing efficient GraphQL queries and integrated BPMN processes for complex backend workflows.",
+      "Enhanced team productivity by identifying and integrating specialized third-party NPM packages for document compliance and state management.",
+    ],
   },
 ];
 
@@ -119,51 +179,204 @@ const technologies = [
   },
 ];
 
-const experiences = [
-  {
-    title: "Intern - Node.js Developer",
-    company_name: "Philips India Ltd.",
-    icon: philips,
-    iconBg: "#FFFFFF",
-    date: "Aug 2019 - July 2020",
-    points: [
-      "Developed a serverless architecture using AWS SAM to capture and analyze regulatory-compliant audit logs leveraging Amazon Kinesis, AWS Lambda, and Amazon CloudWatch.",
-      "Built secure and scalable RESTful APIs to handle high-volume data uploads to Amazon S3, ensuring data integrity, performance optimization, and fault tolerance.",
-      "Designed and implemented a simulator application to test and validate cloud-based infrastructure within a regulatory-compliant environment.",
-      "Automated infrastructure provisioning and deployment using Infrastructure as Code (IaC) practices, improving release efficiency, consistency, and compliance adherence across environments.",
-    ],
-  },
-  {
-    title: "MERN Stack Developer",
-    company_name: "TechToLogics",
-    icon: techtologics,
-    iconBg: "#FFFFFF",
-    date: "Aug 2021 - Dec 2021",
-    points: [
-      "Full-Stack Developer with expertise in Node.js, React.js, Express.js, and MongoDB, building scalable web applications and RESTful APIs for authentication, user management, and data storage.",
-      "Designed and deployed applications on AWS (Route53, Amplify, Elastic Beanstalk, CodePipeline, CodeBuild, CloudFront, S3) with monitoring and log management.",
-      "Implemented secure authentication using JWT, integrated Nodemailer for email services and Twilio for SMS notifications.",
-      "Developed pre-launch and production-ready applications with responsive UI using HTML5, SCSS, and CSS3, ensuring secure signup and manual verification workflows.",
-    ],
-  },
-  {
-    title: "Software Engineer",
-    company_name: "NEC Software Solutions",
-    icon: nec,
-    iconBg: "#FFFFFF",
-    date: "Dec 2021 - Present",
-    points: [
-      "Engineered device onboarding and configuration workflows using the OS2IOT framework, enabling seamless remote lifecycle management for MQTT and LoRaWAN sensors.",
-      "Developed the \"Context Broker Toolkit\" using Angular & Node.js to monitor real-time sensor data streams and integrated IoT platforms using FIWARE for enhanced data visualization.",
-      "Contributed to the Open-Source community via OS2IoT and QuantumLeap, improving time-series database functionalities.",
-      "Designed comprehensive UI/UX frameworks in Figma to streamline the user interface for monitoring dashboards.",
-      "Architected a supplier hierarchy system to ensure EU regulation compliance and prevent social dumping, supporting UN Sustainable Development Goals.",
-      "Developed core, reusable UI components using Angular 16, TypeScript, and Storybook, ensuring design consistency across the platform.",
-      "Optimized data retrieval by implementing efficient GraphQL queries and integrated BPMN processes for complex backend workflows.",
-      "Enhanced team productivity by identifying and integrating specialized third-party NPM packages for document compliance and state management."
-    ],
-  },
-];
+const projects = {
+  subText:
+    "Following projects showcases my skills and experience through real-world examples " +
+    "of my work. Each project is briefly described with links to code repositories " +
+    "and live demos in it. It reflects my ability to solve complex problems, " +
+    "work with different technologies, and manage projects effectively.",
+  myProjects: [
+    {
+      name: "Memento",
+      description:
+        "Social media platform built with the MERN stack, enabling users to share memorable life events, manage posts, and interact through a responsive and dynamic social experience.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "nodejs",
+          color: "green-text-gradient",
+        },
+        {
+          name: "oauth2",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: memento,
+      source_code_link: "https://github.com/rohit-vrrr/memories-project",
+    },
+    {
+      name: "String",
+      description:
+        "A real-time anonymous chat application allowing users to create or join chat rooms for seamless, low-latency group conversations.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "expressjs",
+          color: "green-text-gradient",
+        },
+        {
+          name: "socketio",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: stringchat,
+      source_code_link: "https://github.com/rohit-vrrr/Chat-App",
+    },
+    {
+      name: "Anonymous.io",
+      description:
+        "An anonymous social sharing platform inspired by Whisper, enabling users to post and explore messages securely with backend-driven content management.",
+      tags: [
+        {
+          name: "javascript",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "ejs",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: anonymousio,
+      source_code_link: "https://github.com/rohit-vrrr/Anonymous.io",
+    },
+    {
+      name: "Keeper",
+      description:
+        "Designed for quick note management, letting users create, organize, and store notes with smooth UI interactions and dynamic rendering.",
+      tags: [
+        {
+          name: "javascript",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "html",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: keeper,
+      source_code_link: "https://github.com/rohit-vrrr/Keeper-App",
+    },
+    {
+      name: "Newsletter",
+      description:
+        "A subscription-based web application integrated with Mailchimp APIs to collect user details and sync them directly to Mailchimp audiences.",
+      tags: [
+        {
+          name: "nodejs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "mailchimp",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: newsletter,
+      source_code_link: "https://github.com/rohit-vrrr/Newsletter-Web-App",
+    },
+    {
+      name: "Blog Website",
+      description:
+        "A customizable EJS-based blogging template with dynamic routing and reusable layouts, enabling quick deployment with minimal configuration.",
+      tags: [
+        {
+          name: "javascript",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "ejs",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: blog,
+      source_code_link: "https://github.com/rohit-vrrr/Blog-Website",
+    },
+    {
+      name: "UpBeat",
+      description:
+        "Brings an interactive drum kit to the browser using JavaScript and DOM events, enabling sound playback through keyboard and click actions.",
+      tags: [
+        {
+          name: "javascript",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "dom",
+          color: "green-text-gradient",
+        },
+        {
+          name: "html",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: upbeat,
+      source_code_link: "https://github.com/rohit-vrrr/Drums-UpBeat-Web-Dev",
+    },
+    {
+      name: "Tap-Z-Tap",
+      description:
+        "An endless Unity-based arcade game where players control a ball with single-tap mechanics to navigate an infinite zigzag path.",
+      tags: [
+        {
+          name: "unity",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "c#",
+          color: "green-text-gradient",
+        },
+        {
+          name: "android",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: tapztap,
+      source_code_link: "https://github.com/rohit-vrrr/Tap-Z-Tap-Game",
+    },
+    {
+      name: "Mad Bird",
+      description:
+        "A Unity arcade game inspired by Flappy mechanics, featuring physics-based movement, obstacle avoidance, and real-time score tracking.",
+      tags: [
+        {
+          name: "unity",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "c#",
+          color: "green-text-gradient",
+        },
+        {
+          name: "android",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: madbird,
+      source_code_link: "https://github.com/rohit-vrrr/Mad-Bird-Game",
+    },
+  ],
+};
 
 const testimonials = [
   {
@@ -192,196 +405,12 @@ const testimonials = [
   },
 ];
 
-const projects = [
-  {
-    name: "Memento",
-    description:
-      "Social media platform built with the MERN stack, enabling users to share memorable life events, manage posts, and interact through a responsive and dynamic social experience.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "nodejs",
-        color: "green-text-gradient",
-      },
-      {
-        name: "oauth2",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: memento,
-    source_code_link: "https://github.com/rohit-vrrr/memories-project",
-  },
-  {
-    name: "String",
-    description:
-      "A real-time anonymous chat application allowing users to create or join chat rooms for seamless, low-latency group conversations.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "expressjs",
-        color: "green-text-gradient",
-      },
-      {
-        name: "socketio",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: stringchat,
-    source_code_link: "https://github.com/rohit-vrrr/Chat-App",
-  },
-  {
-    name: "Anonymous.io",
-    description:
-      "An anonymous social sharing platform inspired by Whisper, enabling users to post and explore messages securely with backend-driven content management.",
-    tags: [
-      {
-        name: "javascript",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "ejs",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: anonymousio,
-    source_code_link: "https://github.com/rohit-vrrr/Anonymous.io",
-  },
-  {
-    name: "Keeper",
-    description:
-      "Designed for quick note management, letting users create, organize, and store notes with smooth UI interactions and dynamic rendering.",
-    tags: [
-      {
-        name: "javascript",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "html",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: keeper,
-    source_code_link: "https://github.com/rohit-vrrr/Keeper-App",
-  },
-  {
-    name: "Newsletter",
-    description:
-      "A subscription-based web application integrated with Mailchimp APIs to collect user details and sync them directly to Mailchimp audiences.",
-    tags: [
-      {
-        name: "nodejs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mailchimp",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: newsletter,
-    source_code_link: "https://github.com/rohit-vrrr/Newsletter-Web-App",
-  },
-  {
-    name: "Blog Website",
-    description:
-      "A customizable EJS-based blogging template with dynamic routing and reusable layouts, enabling quick deployment with minimal configuration.",
-    tags: [
-      {
-        name: "javascript",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "ejs",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: blog,
-    source_code_link: "https://github.com/rohit-vrrr/Blog-Website",
-  },
-  {
-    name: "UpBeat",
-    description:
-      "Brings an interactive drum kit to the browser using JavaScript and DOM events, enabling sound playback through keyboard and click actions.",
-    tags: [
-      {
-        name: "javascript",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "dom",
-        color: "green-text-gradient",
-      },
-      {
-        name: "html",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: upbeat,
-    source_code_link: "https://github.com/rohit-vrrr/Drums-UpBeat-Web-Dev",
-  },
-  {
-    name: "Tap-Z-Tap",
-    description:
-      "An endless Unity-based arcade game where players control a ball with single-tap mechanics to navigate an infinite zigzag path.",
-    tags: [
-      {
-        name: "unity",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "c#",
-        color: "green-text-gradient",
-      },
-      {
-        name: "android",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tapztap,
-    source_code_link: "https://github.com/rohit-vrrr/Tap-Z-Tap-Game",
-  },
-  {
-    name: "Mad Bird",
-    description:
-      "A Unity arcade game inspired by Flappy mechanics, featuring physics-based movement, obstacle avoidance, and real-time score tracking.",
-    tags: [
-      {
-        name: "unity",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "c#",
-        color: "green-text-gradient",
-      },
-      {
-        name: "android",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: madbird,
-    source_code_link: "https://github.com/rohit-vrrr/Mad-Bird-Game",
-  },
-];
-
-export { services, technologies, experiences, testimonials, projects };
+export {
+  navLinks,
+  hero,
+  about,
+  technologies,
+  experiences,
+  testimonials,
+  projects,
+};

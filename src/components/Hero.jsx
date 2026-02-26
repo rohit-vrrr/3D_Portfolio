@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+import { hero } from "../constants";
 
 const Hero = () => {
   return (
@@ -16,11 +17,11 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>Rohit</span>
+            {hero.greeting} <span className='text-[#915EFF]'>{hero.name}</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I build immersive 3D experiences, user <br className='sm:block hidden' />
-            interfaces and scalable web applications
+            {hero.line1} <br className='sm:block hidden' />
+            {hero.line2}
           </p>
         </div>
       </div>
