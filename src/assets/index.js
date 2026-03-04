@@ -41,6 +41,7 @@ import tapztap from "./project/tapztap.png";
 import madbird from "./project/madbird.png";
 
 import github from "./github.png";
+import ballSprite from "./ballSprite.png";
 
 export {
   logo,
@@ -75,5 +76,6 @@ export {
   upbeat,
   tapztap,
   madbird,
-  github
+  github,
+  ballSprite
 };

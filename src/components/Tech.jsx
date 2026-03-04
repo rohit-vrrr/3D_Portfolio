@@ -3,6 +3,7 @@ import React from "react";
 import { BallCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
+import { ballSprite } from "../assets";
 
 const Tech = () => {
   return (
@@ -15,7 +16,7 @@ const Tech = () => {
             className="relative w-16 h-16 flex items-center justify-center"
           >
             <img
-              src="/src/assets/ball-sprite.png"
+              src={ballSprite}
               alt="ball-sprite"
               className="absolute w-full h-full"
             />
