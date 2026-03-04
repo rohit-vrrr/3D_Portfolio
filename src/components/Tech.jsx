@@ -6,13 +6,38 @@ import { technologies } from "../constants";
 
 const Tech = () => {
   return (
-    <div className='flex flex-row flex-wrap justify-center gap-10'>
-      {technologies.map((technology) => (
-        <div className='w-28 h-28' key={technology.name}>
-          <BallCanvas icon={technology.icon} name={technology.name} />
-        </div>
-      ))}
-    </div>
+    <>
+      {/* Mobile Icons */}
+      <div className="flex md:hidden flex-wrap justify-center gap-6">
+        {technologies.map((tech) => (
+          <div
+            key={tech.name}
+            className="relative w-16 h-16 flex items-center justify-center"
+          >
+            <img
+              src="/src/assets/ball-sprite.png"
+              alt="ball-sprite"
+              className="absolute w-full h-full"
+            />
+
+            <img
+              src={tech.icon}
+              alt={tech.name}
+              className="w-8 h-8 relative z-10"
+            />
+          </div>
+        ))}
+      </div>
+
+      {/* Desktop 3D Balls */}
+      <div className="hidden md:flex flex-row flex-wrap justify-center gap-10">
+        {technologies.map((technology) => (
+          <div className="w-28 h-28" key={technology.name}>
+            <BallCanvas icon={technology.icon} name={technology.name} />
+          </div>
+        ))}
+      </div>
+    </>
   );
 };
 
